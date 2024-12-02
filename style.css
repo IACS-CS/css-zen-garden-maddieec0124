@@ -1,5 +1,5 @@
 /********************************** 
-* Design by:  [your name]
+* Design by:  Maddie Evans-Cole
 * Design name:  [your design name]
 * 
 * License: [license name - e.g. MIT if you want to let others
@@ -7,43 +7,163 @@
 * don't want others to use the design]
 * 
 * Acknowledgments/Sources:
-* - 
+* - AI image generator- deepai.org
 * - 
 * -
 */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+.iacs {
+  color: #0033a0;
+  text-shadow: 3px 3px 3px #cdc6db;
+}
 
-/* Starter code -- feel free to delete */
+h1 {
+  text-decoration: underline;
+  text-decoration-color: #0033a0;
+  color: #464fcc;
+   font-family: "Bodoni Moda", serif;
+}
 
-/* Typography */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #2a2a2e;
+  color: white;
+  background-image: url('Background.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 
-/* Get your own import URL from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  margin-bottom: 20px;
+}
+
+header h1,
+header h2 {
+  margin: 10px 0;
+  
+}
+h2{
+    font-family: "League Script", cursive;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+section,
+main,
+aside {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+section h3,
+main h3 {
+  margin: 15px 0;
+}
+
+p {
+  margin: 10px 0;
+   font-family: "Inria Serif", serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
 
 .page-wrapper {
-  /* Main font */
-  font-family: Poppins, sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Header font */
-  font-family: "Dancing Script", cursive;
+  text-align: center;
+  width: 100%;
 }
 
-/* Background */
-#css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+/* Dropdown button (.dropbtn) */
+h3.select,
+h3.archives,
+h3.resources {
+  background: blue;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
-/* Page wrapper */
-.page-wrapper {
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
+
+/* Dropdown (wraps dropbtn and dropdown-content) */
+.design-archives,
+.design-selection,
+.zen-resources {
+  position: relative;
+  display: inline-block;
+}
+
+/* .dropdown-content */
+.design-archives ul,
+.design-selection ul,
+.zen-resources ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.design-archives ul li,
+.design-selection ul li,
+.zen-resources ul li {
+  margin: 10px 0;
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.design-archives ul li:hover,
+.design-selection ul li:hover,
+.zen-resources ul li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dropdown hover functionality */
+.design-archives:hover ul,
+.design-selection:hover ul,
+.zen-resources:hover ul {
+  display: block;
+}
+
+.design-archives:hover h3.archives,
+.design-selection:hover h3.select,
+.zen-resources:hover h3.resources {
+  background-color: #5409c6;
+}
+aside{
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
 }
