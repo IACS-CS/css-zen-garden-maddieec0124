@@ -237,7 +237,7 @@ body {
 }
 
 body::before {
-  content: "Full Moon - December 5, 2024"; 
+  content: "phase of the moon - due date"; 
   font-size: 16px;
   text-align: center;
   color: white;
