@@ -184,7 +184,7 @@ height: 85px;
 .sidebar .wrapper{
   display:flex;
   justify-content: center;
-  gap: 8px;
+  gap: 20px;
 }
 
 aside > div > div{
