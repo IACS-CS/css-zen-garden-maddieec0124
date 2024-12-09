@@ -14,22 +14,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 .iacs {
-  color: #0033a0;
-  text-shadow: 3px 3px 3px #cdc6db;
+  color: #837d9f;
+  text-shadow: 3px 3px 3px #837d9f;
 }
 
 h1 {
   text-decoration: underline;
-  text-decoration-color: #0033a0;
-  color: #464fcc;
+  text-decoration-color: #ada8c6;
+  color: #ada8c6;
    font-family: "Bodoni Moda", serif;
    font-size: 70px;
+   padding-bottom: 20px;
    
 }
 
 body {
   
-  padding: 0;
+  padding: 60px;
+  padding-left: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -42,9 +44,16 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center; 
+  max-width: 900px;
+  line-height: 1.5rem;
+  
 
 }
 
+a{
+  text-decoration-color:#837d9f;
+  color: #837d9f;
+}
 
 h2{
     font-family: "League Script", cursive;
@@ -86,7 +95,7 @@ ul {
   height: calc(100vh - 85px);
 }
 
-/* Dropdown button (.dropbtn) */
+
 h3.select,
 h3.archives,
 h3.resources {
@@ -98,9 +107,14 @@ h3.resources {
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px
+    
 }
 
-/* Dropdown (wraps dropbtn and dropdown-content) */
+
 .design-archives,
 .design-selection,
 .zen-resources {
@@ -108,7 +122,7 @@ h3.resources {
   display: inline-block;
 }
 
-/* .dropdown-content */
+
 .design-archives ul,
 .design-selection ul,
 .zen-resources ul {
@@ -150,7 +164,10 @@ h3.resources {
 .design-archives:hover h3.archives,
 .design-selection:hover h3.select,
 .zen-resources:hover h3.resources {
-  background-color: #5409c6;
+  background-color: #152642;
+      display: flex;
+    justify-content: center;
+    align-items: center;
 }
 aside{
 position:fixed;
@@ -204,7 +221,7 @@ aside ul li {
 
 aside li a:first-child {
   display: block;
-  background: rgb(50, 44, 118);
+  background: #152642;
   color: rgb(255, 255, 255);
   padding: 4px 8px;
   box-sizing: border-box;
@@ -220,30 +237,27 @@ aside li {
 
 #zen-resources h3::before {
   content: " ";
-  display: block;
-  width: 75px;
-  height: 75px;
-  margin: auto;
+  display: inline-block;
+  width: 65px;
+  height: 42px;
   background-size: cover;
   background-position: center;
   background-image: url(saturn-doodle.png);
 }
 #design-selection h3::before {
   content: " ";
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: auto;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   background-size: cover;
   background-position: center;
   background-image: url(pluto-doodle.png);
 }
 #design-archives h3::before {
   content: " ";
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: auto;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
   background-size: cover;
   background-position: center;
   background-image: url(supernova-doodle.png);
@@ -265,4 +279,46 @@ body::after {
 .page-wrapper {
   position: relative;
   padding-bottom: 40px; 
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translate(10vw, 10vh) scale(1);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100vw, 50vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+
+.explanation::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: white;
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: shooting-star 3s linear infinite;
+}
+
+
+.explanation::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: white;
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: shooting-star 3s linear infinite;
 }
