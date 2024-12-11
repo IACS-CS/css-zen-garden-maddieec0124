@@ -55,6 +55,7 @@ a{
   color: #837d9f;
 }
 
+
 h2{
     font-family: "League Script", cursive;
     font-size: 40px;
@@ -179,6 +180,8 @@ height: 85px;
 
 #css-zen-garden{
   height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .sidebar .wrapper{
@@ -322,3 +325,5 @@ body::after {
   border-radius: 50%;
   animation: shooting-star 3s linear infinite;
 }
+
+
