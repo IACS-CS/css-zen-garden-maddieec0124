@@ -13,8 +13,9 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=League+Script&display=swap');
 .iacs {
-  color: #837d9f;
+  color: #ada8c6;
   text-shadow: 3px 3px 3px #837d9f;
 }
 
@@ -25,7 +26,8 @@ h1 {
    font-family: "Bodoni Moda", serif;
    font-size: 70px;
    padding-bottom: 20px;
-   
+   text-shadow: 5px 5px 5px #837d9f;
+   line-height: 5rem;
 }
 
 body {
@@ -35,8 +37,6 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background-color: #2a2a2e;
   color: white;
@@ -46,19 +46,26 @@ body {
   background-position: center; 
   max-width: 900px;
   line-height: 1.5rem;
+   margin-left: 175px !important;
+   font-family: "Elsie", serif;
   
+ 
 
 }
 
 a{
   text-decoration-color:#837d9f;
   color: #837d9f;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px #837d9f;
 }
 
 
 h2{
     font-family: "League Script", cursive;
     font-size: 40px;
+    text-shadow: 3px 3px 3px #c7c4d5;
+    
 }
 
 .menu {
@@ -77,7 +84,7 @@ aside {
 
 
 p {
-   font-family: "Inria Serif", serif;
+   font-family: "Elsie", serif;
    
 }
 
@@ -127,11 +134,8 @@ h3.resources {
 .design-archives ul,
 .design-selection ul,
 .zen-resources ul {
-  
   position: absolute;
-  
   min-width: 200px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
   list-style: none;
@@ -143,7 +147,7 @@ h3.resources {
 .design-selection ul li,
 .zen-resources ul li {
   
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 10px 15px;
   text-decoration: none;
   display: block;
@@ -160,6 +164,7 @@ h3.resources {
 .design-selection:hover ul,
 .zen-resources:hover ul {
   display: block;
+
 }
 
 .design-archives:hover h3.archives,
@@ -266,7 +271,7 @@ aside li {
   background-image: url(supernova-doodle.png);
 }
 body::after {
-  content: "🌔 Phase of the moon - due date"; 
+  content: "🌖 Waning Gibbous - Due Date 12/20/2024 🌖"; 
   font-size: 16px;
   text-align: center;
   color: white;
@@ -278,6 +283,7 @@ body::after {
   padding: 10px 0; 
   background-color: #152642;
   z-index: 10; 
+  text-shadow: 3px 3px 3px #9195ba;
 }
 .page-wrapper {
   position: relative;
@@ -310,6 +316,7 @@ body::after {
   box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   animation: shooting-star 3s linear infinite;
+  
 }
 
 
@@ -324,6 +331,7 @@ body::after {
   box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   animation: shooting-star 3s linear infinite;
+   
 }
 
 
